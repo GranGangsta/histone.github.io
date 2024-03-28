@@ -268,7 +268,7 @@
 }
 @media (min-width: 400px) {
   .text-24 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 700px) {
@@ -494,6 +494,12 @@
   }
 }
 @media (min-width: 200px) {
+  .menu-logo-img {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media (min-width: 400px) {
   .menu-logo-img {
     height: 15px;
     width: 15px;
