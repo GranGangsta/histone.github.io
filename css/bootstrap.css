@@ -312,8 +312,8 @@
   width: 100px;
 }}
 @media (min-width: 400px) { .image-info {
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
 }}
 @media (min-width: 450px) { .image-info {
   height: 200px;
