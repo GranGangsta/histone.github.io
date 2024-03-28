@@ -35,10 +35,16 @@
   height: auto;
   width: 200px;
 }
+@media (min-width: 100px) {
+  .shop-icon {
+    height: auto;
+    width: 40px;
+  }
+}
 @media (min-width: 200px) {
   .shop-icon {
     height: auto;
-    width: 80px;
+    width: 70px;
   }
 }
 @media (min-width: 800px) {
@@ -163,16 +169,17 @@
   height: 100px;
   background-color: #2F3137;
   padding-left: 3.47%;
-  padding-right: 3.47%;
 }
 @media (min-width: 200px) {
   .menu-container {
-    height: 25px;
+    height: 50px;
+    gap: 5%;
   }
 }
 @media (min-width: 500px) {
   .menu-container {
     height: 50px;
+    gap: 2.7%;
   }
 }
 @media (min-width: 800px) {
@@ -194,6 +201,11 @@
   font-size: 1.25rem;
 }
 @media (min-width: 100px) {
+  .text-20 {
+    font-size: 0.4rem;
+  }
+}
+@media (min-width: 200px) {
   .text-20 {
     font-size: 0.5rem;
   }
@@ -224,7 +236,17 @@
   }
 }
 .text-20-floating {
-  font-size: 1rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 1px) {
+  .text-20-floating {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 300px) {
+  .text-20-floating {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 600px) {
   .text-20-floating {
@@ -235,6 +257,11 @@
   font-size: 1.5rem;
 }
 @media (min-width: 100px) {
+  .text-24 {
+    font-size: 0.45rem;
+  }
+}
+@media (min-width: 300px) {
   .text-24 {
     font-size: 0.5rem;
   }
@@ -268,7 +295,15 @@
   height: 600px;
   width: 600px;
 }
+@media (min-width: 0px) { .image-info {
+  height: 25px;
+  width: 25px;
+}}
 @media (min-width: 200px) { .image-info {
+  height: 50px;
+  width: 50px;
+}}
+@media (min-width: 300px) { .image-info {
   height: 100px;
   width: 100px;
 }}
@@ -332,57 +367,64 @@
   row-gap: 20px;
 }}
 .text-info-container {
-  margin-bottom: 1.9rem;
-  margin-left: 3.75rem;
-  margin-right: 3.75rem;
+  padding-bottom: 1.9rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+@media (min-width: 0px) {
+  .text-info-container {
+    padding-bottom: 0.05rem;
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
 }
 @media (min-width: 200px) {
   .text-info-container {
-    margin-bottom: 0.1rem;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 @media (min-width: 400px) {
   .text-info-container {
-    margin-bottom: 0.3rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 @media (min-width: 600px) {
   .text-info-container {
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 800px) {
   .text-info-container {
-    margin-bottom: 0.8rem;
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }
 @media (min-width: 1000px) {
   .text-info-container {
-    margin-bottom: 1.2rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
   .text-info-container {
-    margin-bottom: 1.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding-bottom: 1.6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 @media (min-width: 1400px) {
   .text-info-container {
-    margin-bottom: 1.9rem;
-    margin-left: 3.75rem;
-    margin-right: 3.75rem;
+    padding-bottom: 1.9rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 }
 .main-container {
@@ -402,11 +444,16 @@
   flex-direction: column;
 }
 .card {
-  height: 300px !important;
+  height: 200px !important;
 }
 .col-auto {
   flex: 0 0 auto;
   width: 70%;
+}
+@media (min-width: 300px) {
+  .card {
+    height: 300px !important;
+  }
 }
 @media (min-width: 600px) {
   .card {
@@ -431,6 +478,12 @@
 .menu-logo-img {
   height: 60px;
   width: 60px;
+}
+@media (min-width: 0px) {
+  .menu-logo-img {
+    height: 7px;
+    width: 7px;
+  }
 }
 @media (min-width: 200px) {
   .menu-logo-img {
@@ -706,7 +759,17 @@ h2, .h2 {
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
+@media (min-width: 100px) {
+  h3, .h3 {
+    font-size: 0.4rem;
+  }
+}
 @media (min-width: 200px) {
+  h3, .h3 {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 300px) {
   h3, .h3 {
     font-size: 0.65rem;
   }
@@ -744,6 +807,11 @@ h4, .h4 {
 @media (min-width: 100px) {
   h4, .h4 {
     font-size: 0.4rem;
+  }
+}
+@media (min-width: 200px) {
+  h4, .h4 {
+    font-size: 0.5rem;
   }
 }
 @media (min-width: 300px) {
