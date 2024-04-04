@@ -877,7 +877,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title] {
@@ -12738,7 +12738,7 @@ textarea.form-control-lg {
   .subs-card {
     flex: 0 0 auto;
     width: 75%;
-    height: 210px !important;
+    height: 200px !important;
     margin: 1rem 0 1rem 0;
   }
   .subs-container {
