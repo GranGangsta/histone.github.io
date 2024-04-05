@@ -27,9 +27,9 @@
           <li>Генерировать неограниченное количество картинок в месяц</li>
           <li>Запросы на разные темы не имеют задержок</li>
         </ul>
-        <div class="text-center mt-auto">
-          <input type="checkbox" class="btn-check" id="btn-check-images" autocomplete="off">
-          <label class="btn btn-outline-primary text-20" for="btn-check-images">2,99$ / месяц</label>
+        <div class="text-center mt-last">
+          <input type="checkbox" class="btn-check" id="btnCheckImages" autocomplete="off" OnClick="checkCalc()">
+          <label class="btn btn-outline-primary text-20" for="btnCheckImages">2.99$ / месяц</label>
         </div>
       </div>
       <div class="card subs-card px-2 subs-card">
@@ -39,9 +39,9 @@
           <li>Генерировать музыку из нескольких песен и изменять её</li>
           <li>Генерировать звуки или музыку по текстовому запросу пользователя</li>
         </ul>
-        <div class="text-center mt-auto">
-          <input type="checkbox" class="btn-check" id="btn-check-music" autocomplete="off">
-          <label class="btn btn-outline-primary text-20" for="btn-check-music">7,99$ / месяц</label>
+        <div class="text-center mt-last">
+          <input type="checkbox" class="btn-check" id="btnCheckMusic" autocomplete="off" OnClick="checkCalc()">
+          <label class="btn btn-outline-primary text-20" for="btnCheckMusic">7.99$ / месяц</label>
         </div>
       </div>
       <div class="card subs-card px-2 subs-card">
@@ -52,9 +52,9 @@
           <li>Умеет находить лучшие моменты из видео</li>
           <li>Позволяет генерировать короткие видео по запросу</li>
         </ul>
-        <div class="text-center mt-auto">
-          <input type="checkbox" class="btn-check" id="btn-check-video" autocomplete="off">
-          <label class="btn btn-outline-primary text-20" for="btn-check-video">6,99$ / месяц</label>
+        <div class="text-center mt-last">
+          <input type="checkbox" class="btn-check" id="btnCheckVideo" autocomplete="off" OnClick="checkCalc()">
+          <label class="btn btn-outline-primary text-20" for="btnCheckVideo">8.99$ / месяц</label>
         </div>
       </div>
       <div class="card subs-card px-2 subs-card">
@@ -65,11 +65,15 @@
           <li>Оптимизирует код</li>
           <li>Пишет код по запросу</li>
         </ul>
-        <div class="text-center mt-auto">
-          <input type="checkbox" class="btn-check" id="btn-check-progs" autocomplete="off">
-          <label class="btn btn-outline-primary text-20" for="btn-check-progs">1,99$ / месяц</label>
+        <div class="text-center mt-last">
+          <input type="checkbox" class="btn-check" id="btnCheckProgs" autocomplete="off" OnClick="checkCalc()">
+          <label class="btn btn-outline-primary text-20" for="btnCheckProgs">3.99$ / месяц</label>
         </div>
       </div>
+    </div>
+    <div class="main-container normal-height pb-6" id="containerWithText">
+      <p id="calculatedNumbs" class="text-24"></p>
+      <a class="btn btn-primary text-24 mt-3" href="Registrate.html" role="button">Оплатить</a>
     </div>
     <div class="last-container" id="help">
       <p class="text-20">Email: support@histone.com</p>
@@ -91,6 +95,7 @@
       new bootstrap.Popover(document.getElementById('popoverButton'))
       const collapseElementList = document.querySelectorAll('.collapse')
       const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-    </script>        
+    </script>
+    <script src="../scripts/script.js"></script>        
 </body>
 </html>

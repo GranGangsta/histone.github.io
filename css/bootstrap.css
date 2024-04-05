@@ -48,6 +48,16 @@
   height: 80%;
   width: 80%;
 }
+.col-payment {
+  flex: 0 0 auto;
+  width: 90% !important;
+}
+@media (min-width: 676px) {
+  .col-payment {
+  flex: 0 0 auto;
+  width: 50% !important;
+  }
+}
 .technologies-text-info {
   margin-bottom: 65px;
 } 
@@ -5079,11 +5089,6 @@ textarea.form-control-lg {
   border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
 }
 
-.mt-last {
-  position: absolute;
-  bottom: 36px; 
-}
-
 .card-footer {
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
@@ -8651,6 +8656,11 @@ textarea.form-control-lg {
   margin-top: 6.25rem !important;
 }
 
+.mt-last {
+  margin-top: auto;
+  margin-bottom: 36px;
+  place-self: center;
+}
 .mt-auto {
   margin-top: auto;
   margin-bottom: 36px;
@@ -12797,4 +12807,8 @@ textarea.form-control-lg {
   .subs-card {
     height: 550px !important;
 }
+}
+#containerWithText {
+  display: none;
+  text-align: center;
 }
