@@ -45,7 +45,44 @@ function checkCalc() {
         textContainer.style.display = "block"
     }
 }
-var numInput = document.getElementById("numInput");
-numInput.addEventListener("input", function() {
+let cardNumInput = document.getElementById("cardNumInput");
+cardNumInput.addEventListener("input", function() {
+    this.value = this.value.replace(/[^0-9]/g, "");
+});
+cardNumInput.addEventListener('input', editCardNum, false);
+    function editCardNum() {
+    let editNum = this.value.replace(/[^\d]/g, '').substring(0,20);
+    if(editNum != ''){
+        editNum = editNum.match(/.{1,4}/g);
+        editNum = editNum.join(' ');
+    } else {
+    }
+    this.value = editNum;
+};
+let dateInput = document.getElementById("dateInput");
+dateInput.addEventListener("input", function() {
+    this.value = this.value.replace(/[^0-9]/g, "");
+});
+dateInput.addEventListener('input', editDate, false);
+    function editDate() {
+    let editDateNum = this.value.replace(/[^\d]/g, '').substring(0,4);
+    if(editDateNum != ''){
+        editDateNum = editDateNum.match(/.{1,2}/g);
+        editDateNum = editDateNum.join('/');
+        if (editDateNum[0] > 1) {
+            editDateNum = editDateNum.replace(/[^0-1]/g, "")
+        }
+        if (editDateNum[0] = 1) {
+            editDateNum = editDateNum.replace(/[^0-9, /]/g, "")
+        }
+        if (editDateNum[1] > 2  ) {
+            editDateNum = editDateNum.replace(/[^0-2, /]/g, "")
+        }
+    } else {
+    }
+    this.value = editDateNum;
+};
+let codeInput = document.getElementById("codeInput");
+codeInput.addEventListener("input", function() {
     this.value = this.value.replace(/[^0-9]/g, "");
 });
