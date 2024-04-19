@@ -75,7 +75,7 @@ dateInput.addEventListener('input', editDate, false);
         if (editDateNum[0] = 1) {
             editDateNum = editDateNum.replace(/[^0-9, /]/g, "")
         }
-        if (editDateNum[1] > 2  ) {
+        if (editDateNum[1] > 2 && editDateNum[0] == 1) {
             editDateNum = editDateNum.replace(/[^0-2, /]/g, "")
         }
     } else {
