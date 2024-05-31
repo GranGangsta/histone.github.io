@@ -48,6 +48,12 @@ function checkCalc() {
 let cardNumInput = document.getElementById("cardNumInput");
 cardNumInput.addEventListener("input", function() {
     this.value = this.value.replace(/[^0-9]/g, "");
+    let buttonCont = document.getElementById("buttonContinue");
+    if (codeInput.value.length > 2 && dateInput.value.length > 3 && cardNumInput.value.length > 14) {
+        buttonCont.disabled = false  
+    } else {
+        buttonCont.disabled = true
+    };
 });
 cardNumInput.addEventListener('input', editCardNum, false);
     function editCardNum() {
@@ -62,6 +68,12 @@ cardNumInput.addEventListener('input', editCardNum, false);
 let dateInput = document.getElementById("dateInput");
 dateInput.addEventListener("input", function() {
     this.value = this.value.replace(/[^0-9]/g, "");
+    let buttonCont = document.getElementById("buttonContinue");
+    if (codeInput.value.length > 2 && dateInput.value.length > 3 && cardNumInput.value.length > 14) {
+        buttonCont.disabled = false  
+    } else {
+        buttonCont.disabled = true
+    };
 });
 dateInput.addEventListener('input', editDate, false);
     function editDate() {
@@ -85,4 +97,23 @@ dateInput.addEventListener('input', editDate, false);
 let codeInput = document.getElementById("codeInput");
 codeInput.addEventListener("input", function() {
     this.value = this.value.replace(/[^0-9]/g, "");
-});
+    let buttonCont = document.getElementById("buttonContinue");
+    if (codeInput.value.length > 2 && dateInput.value.length > 3 && cardNumInput.value.length > 14) {
+        buttonCont.disabled = false  
+    } else {
+        buttonCont.disabled = true
+    };
+}); 
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("emailInput").addEventListener("input", function(e) {
+      const input = e.target.value;
+      const withoutSpaces = input.replace(/\s/g, "");
+      e.target.value = withoutSpaces;
+      let buttonNext = document.getElementById("buttonNext");
+      if (this.value.length > 1) {
+          buttonNext.disabled = false  
+      } else {
+          buttonNext.disabled = true
+      };
+    });
+  });   

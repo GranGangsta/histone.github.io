@@ -3660,19 +3660,19 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-bg: #0032DA;
-  --bs-btn-border-color: #0032DA;
+  --bs-btn-bg: #0d6efd;
+  --bs-btn-border-color: #0d6efd;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #073ae0;
-  --bs-btn-hover-border-color: #0037eb;
+  --bs-btn-hover-bg: #0d6efd;
+  --bs-btn-hover-border-color: #0d6efd;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0036e9;
-  --bs-btn-active-border-color: rgb(9, 69, 158);
+  --bs-btn-active-bg: #0d6efd;
+  --bs-btn-active-border-color: #0d6efd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0032DA;
-  --bs-btn-disabled-border-color: #0032DA;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
 }
 
 .btn-primary-lighter {
@@ -12864,4 +12864,7 @@ textarea.form-control-lg {
   .topper-extra-card > div > a {  
     padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
   }
+}
+.error-text {
+  color: red;
 }

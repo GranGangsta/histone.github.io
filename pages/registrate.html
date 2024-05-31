@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo.svg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histone | Регистрация карты</title>
+</head>
+<body>
+    <div class="menu-container">
+      <a class="icon-link" href="../index.html"><img class="menu-logo-img" src="../images/logo.svg"></a>
+      <a class="link-light text-menu" href="technologies.html">Технологии</a>
+      <a class="link-light text-menu" href="processors.html">Процессоры</a>
+      <a class="link-light text-menu" href="help.html">Помощь</a>
+      <a class="link-light text-menu" href="shops.html">Купить</a>
+      <a class="link-light text-menu" href="subscription.html">Подписки</a>
+    </div>
+    <div class="main-container normal-height py-6 justify-content-center row text-20">
+        <form class="row col-payment justify-content-center" action="success.html" method="get">
+            <div class="col-12">
+                <label for="cardNumb" class="form-label">Номер карты</label>
+                <input class="form-control" onchange="sendInfo()" type="text" name="cardNumb" id="cardNumInput" placeholder="0000 0000 0000 0000" maxlength="24">
+            </div>
+            <div class="col-6 mt-auto">
+                <label for="cardDate" class="form-label">Срок действия</label>
+                <input class="form-control" onchange="sendInfo()" type="text" name="cardDate" id="dateInput" placeholder="ММ/ГГ" maxlength="5">
+            </div>
+            <div class="col-6 mt-auto">
+                <label for="cardCode" class="form-label">Код безопасности</label>
+                <input class="form-control" onchange="sendInfo()" type="password" name="cardCode"  id="codeInput" placeholder="XXXX" maxlength="4">
+            </div>
+            <input type="submit" value="Оплатить" class="btn btn-outline-primary col-6 mt-3" id="buttonContinue" disabled></input>
+          </form>
+    </div>
+    <div class="last-container" id="help">
+      <p class="text-20">Email: support@histone.com</p>
+      <p class="text-20">Адрес: г. Гродно, ул. Новейшая, д. 24</p>
+      <a class="text-20" href="help.html">Помощь</a>
+    </div>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+      const collapseElementList = document.querySelectorAll('.collapse')
+      const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
+    <script src="../scripts/script.js"></script>        
+</body>
+</html>
